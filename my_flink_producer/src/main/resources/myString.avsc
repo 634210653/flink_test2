@@ -1,0 +1,11 @@
+{
+    "namespace": "com.tw",
+    "type": "record",
+    "name": "MyString",
+    "fields": [
+        {
+            "name": "message",
+            "type": "string"
+        }
+    ]
+}
