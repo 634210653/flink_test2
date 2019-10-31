@@ -69,27 +69,6 @@ public class Producer {
                 });
 
 
-
-
-        SerializationSchema<MyString> schema = new SerializationSchema<MyString>() {
-            @Override
-            public byte[] serialize(MyString myString) {
-
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-
-                TypeInformation<MyString> info = TypeInformation.of(MyString.class);
-                byte [] ret = null;
-                try{
-                    AvroKryoSerializerUtils.getAvroUtils().createAvroSerializer(MyString.class).serialize(myString,new DataOutputViewStreamWrapper(stream));
-                    ret = stream.toByteArray();
-
-                }catch (Exception e){
-                    e.printStackTrace();
-                }
-
-                return ret;
-            }
-        };
         result.map(new MapFunction<Tuple2<String, Long>, MyString>() {
             @Override
             public MyString map(Tuple2<String, Long> tuple) {
@@ -97,12 +76,33 @@ public class Producer {
                 return  new MyString(tuple.toString());
             }
         })
-                .addSink(new FlinkKafkaProducer<MyString>("10.207.20.217:9092", "wiki-results",new KeyedSerializationSchemaWrapper<MyString>(schema)));
+                .addSink(new FlinkKafkaProducer<MyString>("10.207.20.217:9092", "wiki-results",new MyStringSchema()));
 
         try {
             env.execute();
         }catch (Exception e){
 
+        }
+    }
+
+
+    class MyStringSchema implements SerializationSchema{
+
+        @Override
+        public byte[] serialize(Object myString) {
+            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+
+            TypeInformation<com.tw.MyString> info = TypeInformation.of(com.tw.MyString.class);
+            byte [] ret = null;
+            try{
+                AvroKryoSerializerUtils.getAvroUtils().createAvroSerializer(com.tw.MyString.class).serialize((com.tw.MyString) myString,new DataOutputViewStreamWrapper(stream));
+                ret = stream.toByteArray();
+
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+            return ret;
         }
     }
 

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23c9532e-6dde-4b6f-b72b-caf66d79bbd8" name="Default Changelist" comment="" />
+    <list default="true" id="23c9532e-6dde-4b6f-b72b-caf66d79bbd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../my_flink_consumer/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_flink_consumer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../my_flink_consumer/src/main/java/com/tw/MyStringSchema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_flink_consumer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../my_flink_consumer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_flink_consumer/src/main/java/com/tw/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../my_flink_consumer/src/main/java/com/tw/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_flink_consumer/src/main/resources/avroString.avsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_flink_consumer/target/classes/avroString.avsc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_flink_consumer/target/classes/com/tw/Consumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../my_flink_consumer/target/classes/com/tw/Consumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tw/MyString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tw/MyString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tw/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tw/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tw/Producer$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tw/Producer$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tw/Producer$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tw/Producer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tw/Producer.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +31,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1Sfxj8UUcEv6BBLIJRpCSexgeuq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my_flink_consumer" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,6 +89,19 @@
       <updated>1571968583740</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
